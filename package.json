@@ -1,0 +1,23 @@
+{
+  "name": "js-regex-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviomicheletti/js-regex-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flaviomicheletti/js-regex-test/issues"
+  },
+  "homepage": "https://github.com/flaviomicheletti/js-regex-test#readme"
+}
