@@ -15,29 +15,10 @@
     <script>
     mocha.setup('bdd')
     expect = chai.expect
-
-      /**
-       * Estes são os seus testes!
-       *
-       * eles devem estar em um arquivo separado,
-       * eu coloquei aqui para facilitar as coisas.
-       */
-       describe('regex', function(){
-        describe('simples', function(){
-          it('deve retirar os traços', function(){
-
-            var value = "a-b-c".replace(/-/g, "");
-            expect(value).to.equal('abc');
-
-            var value = "2019-04-27".replace(/-/g, "");
-            expect(value).to.equal('20190427');
-
-          })
-        })
-      })
-      /** aqui terminam os seus testes */
-
-      mocha.run();
     </script>
+
+    <script src="test/simples.js"></script>
+
+    <script>mocha.run();</script>
   </body>
 </html>
