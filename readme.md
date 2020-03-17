@@ -1,4 +1,4 @@
-# Testando Expressões Regulares (regex) em JavaScript (JS)
+# Testando Expressões Regulares em JavaScript
 
 Instalação
 
