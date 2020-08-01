@@ -50,4 +50,15 @@ https://twig.symfony.com/doc/2.x/templates.html#comparisons
         console.log("não casou", resultado);
     }
 
-    
+### test bootstratp 5
+
+- https://github.com/twbs/bootstrap/blob/main/js/src/util/index.js#L18
+
+    const toType = obj => {
+    if (obj === null || obj === undefined) {
+        return `${obj}`
+    }
+
+    return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase()
+    }
+
