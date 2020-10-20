@@ -3,20 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "expect.js": "^0.3.1"
-  },
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "ava": "^3.9.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flaviomicheletti/js-regex-test.git"
   },
-  "author": "",
+  "author": "Flávio Micheletti",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/flaviomicheletti/js-regex-test/issues"
