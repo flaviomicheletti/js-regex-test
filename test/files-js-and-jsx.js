@@ -1,37 +1,37 @@
-var expect = require("expect.js");
+const test = require('ava');
 
-describe('rarquivos terminados', function () {
-    describe('em .js .jx', function () {
+//
+//    /\.(js|jsx)$/g
+//
+let pattern = /\.(js|jsx)$/g;
+let text = "file.jsx";
 
-        //
-        //    /\.(js|jsx)$/g
-        //
-        let pattern = /\.(js|jsx)$/g;
+// arquivos terminados em
+test('pattern.test, files ending in .js .jx ', t => {
 
-        it('pattern.test', function () {
+    let text = "file.jsx";
+    let result = pattern.test(text);
+    t.true(result);
 
-            let text = "file.jsx";
-            let resultado = pattern.test(text);
-            expect(resultado).to.equal(true);
+    let next = pattern.test(text);
+    t.false(next);
 
-            let next = pattern.test(text);
-            expect(next).to.equal(false);
+    t.pass();
 
-        })
+});
 
-        it('pattern.exec', function () {
+// arquivos terminados em
+test('pattern.exec, files ending in .js .jx', t => {
 
-            let text = "file.jsx";
-            let resultado = pattern.exec(text);
-            // console.log(resultado);
 
-            expect(resultado[0]).to.equal('.jsx');
-            expect(resultado[1]).to.equal('jsx');
-            expect(resultado['index']).to.equal(4);
-            expect(resultado['input']).to.equal(text);
-            expect(resultado['grups']).to.equal(undefined);
+    let result = pattern.exec(text);
 
-        })
+    t.is(result[0], '.jsx');
+    t.is(result[1], 'jsx');
+    t.is(result['index'], 4);
+    t.is(result['input'], text);
+    t.is(result['grups'], undefined);
 
-    })
-})
+    t.pass();
+});
+
