@@ -23,7 +23,6 @@ test('pattern.test, files ending in .js .jx ', t => {
 // arquivos terminados em
 test('pattern.exec, files ending in .js .jx', t => {
 
-
     let result = pattern.exec(text);
 
     t.is(result[0], '.jsx');
